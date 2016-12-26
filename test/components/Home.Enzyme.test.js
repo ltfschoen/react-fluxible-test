@@ -7,7 +7,7 @@ import Home from '../../components/Home';
 const props = {};
 const context = {};
 
-describe ('Home', () => {
+describe ('Home Component with Shallow Rendering using Enzyme', () => {
     it('should exist', () => {
         assert.isDefined(Home);
     });

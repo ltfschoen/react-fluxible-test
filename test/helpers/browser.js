@@ -29,7 +29,10 @@ require('babel-register')();
 // Configure JSDOM and set global variables to simulate browser environment for tests.
 var jsdom = require('jsdom').jsdom;
 
-var exposedProperties = ['window', 'navigator', 'document'];
+var exposedProperties = ['window',
+    'navigator',
+    'document'
+];
 
 global.document = jsdom('');
 global.window = document.defaultView;
