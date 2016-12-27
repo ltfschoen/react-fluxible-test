@@ -8,6 +8,12 @@ import { handleHistory } from 'fluxible-router';
 import pages from '../configs/routes';
 
 class Application extends React.Component {
+    constructor(props, context) {
+        super(props, context);
+        // Retrieve Plugin state value of 'bar' from component
+        console.log("Fluxible Plugin called with props.context.getFoo() in ApplicationComponent returns: ", props.context.getFoo());
+    }
+
     render() {
         var Handler = this.props.currentRoute.handler;
 
@@ -27,6 +33,11 @@ class Application extends React.Component {
         document.title = newProps.pageTitle;
     }
 }
+
+// Plugin Custom Context Type 'foo' is registered in React Context for access even by children
+Application = provideContext(Application, {
+    getFoo: React.PropTypes.func
+});
 
 export default provideContext(handleHistory(connectToStores(
     Application,
