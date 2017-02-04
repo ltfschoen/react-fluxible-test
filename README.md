@@ -4,7 +4,7 @@ Boilerplate Fluxible app (React with server-side rendering) with A-Frame WebVR i
 
 # Screenshot
 
-![alt tag](https://raw.githubusercontent.com/ltfschoen/react-fluxible-test/screenshot.png)
+![alt tag](https://raw.githubusercontent.com/ltfschoen/react-fluxible-test/master/screenshot.png)
 
 # Run
 
