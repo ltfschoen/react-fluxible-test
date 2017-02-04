@@ -1,5 +1,6 @@
 import Home from '../components/Home';
 import About from '../components/About';
+import VR from '../components/VR';
 
 export default {
     home: {
@@ -15,5 +16,12 @@ export default {
         page: 'about',
         title: 'About',
         handler: About
+    },
+    vr: {
+        path: '/vr',
+        method: 'get',
+        page: 'vr',
+        title: 'VR',
+        handler: VR
     }
 };
