@@ -2,6 +2,10 @@
 
 Boilerplate Fluxible app (React with server-side rendering) with A-Frame WebVR incorporated. 
 
+# Screenshot
+
+![alt tag](https://raw.githubusercontent.com/ltfschoen/react-fluxible-test/screenshot.png)
+
 # Run
 
 * Run Webpack development server and open
