@@ -11,7 +11,7 @@ const dehydratedState = window.App; // Sent from the server.js
 window.React = ReactDOM; // For chrome dev tool support
 
 import 'aframe'; // A-Frame requires the 'window' object
-import 'aframe-bmfont-text-component'; // Requires A-Frame
+// import 'aframe-bmfont-text-component'; // Requires A-Frame
 
 // Expose debug object to browser, so that it can be enabled/disabled from browser:
 // https://github.com/visionmedia/debug#browser-support

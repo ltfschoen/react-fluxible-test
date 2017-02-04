@@ -9,7 +9,7 @@ export default class VR extends React.Component {
         return (
             <Scene>
                 <Entity geometry={{primitive: 'box'}} material="color: red" position={[0, 0, -5]}/>
-                <Entity bmfont-text={{text: 'HELLO WORLD'}} position="{[0, 1, -5]}"/>
+                {/*<Entity bmfont-text={{text: 'HELLO WORLD'}} position="{[0, 1, -5]}"/>*/}
             </Scene>
         );
     };
