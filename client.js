@@ -10,6 +10,9 @@ const dehydratedState = window.App; // Sent from the server.js
 
 window.React = ReactDOM; // For chrome dev tool support
 
+import 'aframe'; // A-Frame requires the 'window' object
+import 'aframe-bmfont-text-component'; // Requires A-Frame
+
 // Expose debug object to browser, so that it can be enabled/disabled from browser:
 // https://github.com/visionmedia/debug#browser-support
 window.fluxibleDebug = debug;
@@ -30,6 +33,7 @@ app.rehydrate(dehydratedState, (err, context) => {
         throw err;
     }
     window.context = context;
+
     const mountNode = document.getElementById('app');
 
     debugClient('React Rendering ApplicationComponent passing in ComponentContext via context Prop');
