@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "main": "start.js",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/ltfschoen/react-fluxible-test"
+  },
   "scripts": {
     "build": "webpack & webpack --config webpack.config.production.js",
     "dev": "node webpack-dev-server.js",
